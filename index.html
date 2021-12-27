@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="Gerador e Validador de CPF" />
+    <title>CPF</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+
+        <div class="form-field" id="validator">
+          <form class="field">
+            <input class="field-input" type="text" name="cpf_validator" maxlength='14' id="cpf_validator" />
+            <label class="field-label" for="cpf_validator">Informe o CPF e clique em "Validar CPF"</label>
+            <button class="field-submit" type="submit">Validar CPF</button>
+          </form>
+          <footer class="form-reponse"></footer>
+        </div>
+
+        <div class="form-field" id="generator">
+          <form class="field">
+            <input class="field-input" type="text" name="cpf_generator" disabled />
+            <label class="field-label" for="cpf_generator">Clique em "Gerar CPF"</label>
+            <button class="btn-copy" type="button">Copiar</button>
+            <button class="field-submit" type="submit">Gerar CPF</button>
+          </form>
+          <footer class="form-reponse"></footer>
+        </div>
+
+      </div>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
